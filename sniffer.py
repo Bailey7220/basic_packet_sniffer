@@ -4,4 +4,4 @@ def packet_callback(packet):
     if packet.haslayer(TCP):        
         print (f"TCP Packet: {packet[IP].src} -> {packet[IP].dst}")
 
-sniff(prn=packet_callback, store=0, filter="tcp") #sniff function captures packets. # count= defines the amount of packets to be captured. # prn= sends packet to stated function
+sniff(prn=packet_callback, store=0, filter="tcp") #sniff function captures packets.  prn= sends packet to stated packet_callback
