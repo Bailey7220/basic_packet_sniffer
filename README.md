@@ -6,7 +6,7 @@ Order of Operations
 2. Capture
 3. Parse
 4. Display
-5. Start Again
+5. Repeat
 
 Requirements
 1. Scapy (Python library) --> Windows -> pip install scapy
