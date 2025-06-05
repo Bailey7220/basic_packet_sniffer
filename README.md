@@ -41,7 +41,7 @@ This project is a simple packet sniffer built in Python using the Scapy library.
    
 git clone https://github.com/Bailey7220/basic_packet_sniffer.git
 
-cd sniffer.py
+cd basic_packet_sniffer
 
 
 2. **Set up a Python environment (optional but recommended):**
