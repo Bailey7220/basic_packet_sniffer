@@ -10,7 +10,6 @@ A beginner-friendly Python tool for capturing and analyzing TCP network packets 
 - [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Sample Output](#sample-output)
 - [How It Works](#how-it-works)
 - [Ethics & Legal Notice](#ethics--legal-notice)
 - [Troubleshooting](#troubleshooting)
