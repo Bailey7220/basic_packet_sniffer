@@ -1,7 +1,7 @@
-from scapy.all import *   # .all for Scapy core functions # * to import everything defined in scapy.all, rather than one at a time.
+from scapy.all import *   # .all for Scapy core functions # import * to import everything defined in scapy.all, rather than one at a time.
 
 def packet_callback(packet):
-    print (packet.summary()) # packet.summary shows brief overview of packet
+    if packet.haslayer(TCP):        
+        print (f"TCP Packet: {packet[IP].src} -> {packet[IP].dst}")
 
-#Sniff a single packet and send it packet_callback
-sniff(count=1, prn=packet_callback) #sniff function captures packets. # count= defines the amount of packets to be captured. # prn= sends packet to stated function
+sniff(prn=packet_callback, store=0, filter="tcp") #sniff function captures packets. # count= defines the amount of packets to be captured. # prn= sends packet to stated function
